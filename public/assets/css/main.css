@@ -1,0 +1,162 @@
+.navbar .correct{
+    -webkit-animation:.4s correct;
+    animation:.4s correct}
+    
+.navbar .incorrect{
+    -webkit-animation:.4s 
+    incorrect;animation:.4s incorrect}
+    
+@-webkit-keyframes correct{
+    0%{color:#fff}
+    50%{color:#2e7d32}
+    to{color:#fff}}
+    
+@keyframes correct{
+    0%{color:#fff}
+    50%{color:#2e7d32}
+    to{color:#fff}}
+    
+@-webkit-keyframes incorrect{
+    0%{color:#fff}
+    50%{color:#c62828}
+    to{color:#fff}}
+
+@keyframes incorrect{
+    0%{color:#fff}
+    50%{color:#c62828}
+    to{color:#fff}}
+    
+.navbar{
+    background: teal;
+    min-height:70px;
+    position:fixed;
+    width:100%;
+    -webkit-box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
+    box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
+    color:#fff;
+    font-size:calc(10px + 14 * (100vw - 320px)/ 800);
+    z-index:99;white-space:nowrap}
+    
+.navbar ul{
+    margin:0;
+    padding:0}
+    
+.navbar li{
+    display:inline-block;
+    padding:26px 0;
+    width:33.3%;
+    text-align:center}
+    
+.navbar a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:900}
+    
+@media (
+    max-width:420px)
+    
+{.navbar li:first-child
+    {width:25%}
+    
+.navbar li:nth-child(2)
+    {width:35%}
+    
+.navbar li:last-child
+{width:40%}}
+
+.header{
+    background-color:#2c323c;
+    background-image:url(../images/mickey.jpg);
+    background-repeat:repeat;
+    color:#fff;
+    min-height:400px;
+    padding:180px 20px;
+    padding-bottom:140px;
+    text-align:center}
+    
+.header h1{
+    margin:0;
+    margin-bottom:30px;
+    font-size:4rem}
+    
+.container{
+    display:-ms-flexbox;
+    display:flex;
+    min-height:80%;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -ms-flex-pack:center;
+    justify-content:center;
+    padding-top:50px;
+    padding-bottom:50px;
+    width:90%;
+    margin:0 auto}
+    
+@media (
+    min-width:1100px)
+    
+{.container{
+    padding-left:100px;
+    padding-right:100px;
+    width:1100px}}
+    
+.click-item{
+    background-size:cover;
+    background-position:50%;
+    height:170px;
+    width:170px;
+    margin:8px 25px;
+    border:5px solid #f1f1f1;
+    border-radius:3px;
+    -webkit-box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+    box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+    cursor:pointer}
+    
+.click-item:hover{
+    -webkit-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    transform:scale(1.05);
+    -webkit-box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
+    box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
+    -webkit-transition:.1s;-o-transition:.1s;transition:.1s}
+    
+.shake{
+    -webkit-animation:shake .5s .0125s;
+    animation:shake .5s .0125s}
+    
+@-webkit-keyframes shake{
+    0%,to{-webkit-transform:translateZ(0);
+        transform:translateZ(0)}12.5%,37.5%,62.5%,87.5%{-webkit-transform:translate(-10px);
+            transform:translate(-10px)}25%,50%,75%{-webkit-transform:translate(10px);transform:translate(10px)}}
+            
+@keyframes shake{
+    0%,to{-webkit-transform:translateZ(0);
+        transform:translateZ(0)}12.5%,37.5%,62.5%,87.5%{-webkit-transform:translate(-10px);
+            transform:translate(-10px)}25%,50%,75%{-webkit-transform:translate(10px);
+                transform:translate(10px)}}@media (max-width:750px){.click-item{margin:10px}}
+
+@media (max-width:500px){.click-item{margin:10px}}
+
+.footer{
+    background: black;
+    height:100px;position:relative;
+    color:#fff;overflow:auto}
+    
+.footer>.bottom{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background:teal;
+    padding:8px;
+    font-weight:600}
+    
+.footer>.bottom>img{
+    width:20px;
+    position:relative;
+    top:3px;
+    left:2px}*{-webkit-box-sizing:border-box;box-sizing:border-box;
+        font-family:sans-serif}
+        
+#root,#root>div,body,html{
+    height:100%;margin:0;padding:0}
